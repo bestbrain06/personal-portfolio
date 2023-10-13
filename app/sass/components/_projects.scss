@@ -1,0 +1,25 @@
+@use '../util' as u;
+
+.projects {
+  margin-block-start: 5rem;
+  margin-block-end: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include u.breakpoint(medium) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .project {
+    &__image {
+      display: flex;
+      justify-content: center;
+
+      @include u.breakpoint(medium) {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@use '../util' as u;
+
+.about {
+  margin-block-start: 5rem;
+  @include u.breakpoint(medium) {
+    display: flex;
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+    @include u.breakpoint(medium) {
+      justify-content: flex-start;
+    }
+    img {
+      width: 65%;
+    }
+  }
+
+  &__content {
+    @include u.breakpoint(medium) {
+      width: 80%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-block: 2rem;
+    }
+    P {
+      text-align: center;
+      @include u.breakpoint(medium) {
+        text-align: left;
+      }
+    }
+  }
+}

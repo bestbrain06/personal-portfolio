@@ -1,0 +1,66 @@
+@use '../util' as u;
+.home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-block-start: 1rem;
+  width: 100%;
+
+  @include u.breakpoint(medium) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: var(--primary-500-a);
+
+    width: 100vw;
+    position: fixed;
+    top: -1rem;
+    left: 0;
+
+    height: 4rem;
+    padding-inline: 4rem;
+  }
+
+  &__logo {
+    h1 {
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}
+
+.hero {
+  margin-block-start: 5rem;
+
+  @include u.breakpoint(medium) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    @include u.breakpoint(medium) {
+      justify-content: flex-end;
+    }
+
+    img {
+      width: 70%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-block-start: 5rem;
+    text-align: center;
+    h1 {
+      span {
+        color: gold;
+      }
+    }
+  }
+}
