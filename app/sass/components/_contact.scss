@@ -7,7 +7,7 @@
   form {
     max-width: 400px;
     margin-inline: auto;
-    background-color: hsl(240, 100%, 15%);
+    background-color: var(--primary-500-a);
     padding: 1rem;
     display: flex;
     flex-direction: column;

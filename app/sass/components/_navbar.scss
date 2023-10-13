@@ -123,6 +123,9 @@
       position: relative;
       z-index: 1;
       text-transform: uppercase;
+      transition: ease-in-out 300ms;
+
+      cursor: pointer;
 
       &::before {
         @include u.breakpoint(medium) {
