@@ -18,6 +18,8 @@ body {
   color: var(--white);
 
   margin-inline: 2rem;
+  margin-block-end: 3rem;
+  overflow-x: hidden;
 
   @include u.breakpoint(medium) {
     padding-inline: 4rem;
@@ -25,7 +27,6 @@ body {
 }
 
 img {
-  display: block;
   max-width: 100%;
 }
 
